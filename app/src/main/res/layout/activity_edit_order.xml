@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditOrder">
+
+    <TextView
+        android:id="@+id/text_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="cursive"
+        android:text="@string/logo"
+
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="97dp"
+        tools:ignore="contentDescription"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/neworder"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/text_logo"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/edit_order"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinner_brand"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/neworder"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:textAlignment="center"
+        android:prompt="@string/brand"/>
+
+    <Spinner
+        android:id="@+id/spinner_model"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_brand"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:backgroundTint="#000000"/>
+
+    <EditText
+        android:id="@+id/text_year"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_model"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/year"/>
+
+    <EditText
+        android:id="@+id/text_repair_parts"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_year"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/repair_parts"/>
+
+    <Spinner
+        android:id="@+id/spinner_work"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_repair_parts"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:backgroundTint="#000000"/>
+
+    <EditText
+        android:id="@+id/text_cost"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_work"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/cost"/>
+
+    <ImageView
+        android:id="@+id/accept_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/accept"
+        android:layout_below="@id/text_cost"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="70dp"/>
+
+    <ImageView
+        android:id="@+id/cancel_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/cancel"
+        android:layout_below="@id/text_cost"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="250dp"/>
+
+</RelativeLayout>

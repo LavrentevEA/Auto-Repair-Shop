@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Auto Repair Shop App</string>
+    <string name="logo">Auto Repair Shop     </string>
+    <string name="main_logo">Auto Repair Shop</string>
+    <string name="logo_orders">Auto Repair Shop Orders</string>
+    <string name="new_order">New order</string>
+    <string name="edit_order">Edit order</string>
+    <string name="question">Do not have an account yet?</string>
+    <string name="create_account"><u>Create an account</u></string>
+    <string name="brand">Choose Brand</string>
+    <string name="model">Choose Model</string>
+    <string name="year">Year</string>
+    <string name="repair_parts">Repair Parts</string>
+    <string name="work">Choose Work</string>
+    <string name="cost">Cost</string>
+    <string name="exit">Exit</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string-array name="work">
+        <item>Choose Work</item>
+        <item>Change</item>
+        <item>Repair</item>
+        <item>Paint</item>
+    </string-array>
+</resources>
